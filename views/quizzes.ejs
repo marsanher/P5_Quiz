@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lista de Quizzes</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Lista de Quizzes</h1>
+    <p>
+       <% quizzes.forEach( function(quiz) {%>
+          <%=quiz.question%>: <%= quiz.answer;%><br>
+           <%});%>
+    </p>
+  </body>
+</html>
